@@ -64,7 +64,7 @@ ruby_backward = "#{rubyhdrdir}/ruby/backward"
 dldlibs = c['DLDLIBS']
 
 CFLAGS = c['CFLAGS']
-cxxflags = CFLAGS + c['CXXFLAGS']
+cxxflags = CFLAGS + " " + c['CXXFLAGS']
 cxxflags.gsub!(/-O\d?/, "")
 
 
