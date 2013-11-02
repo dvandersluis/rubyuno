@@ -311,7 +311,7 @@ task :header do
     puts "flag for cppumaker does not exist. starting cppumaker..."
     
     office_types = "#{base_path}/offapi.rdb"
-    sh "#{CPPUMAKER} -Gc -BUCR -O#{CPPU_INCLUDE} -T\"#{types.join(';')}\" \"#{ure_types}\" \"#{office_types}\""
+    sh "#{CPPUMAKER} -Gc -O#{CPPU_INCLUDE} -T\"#{types.join(';')}\" \"#{ure_types}\" \"#{office_types}\""
     sh "echo > #{CPPUMAKER_FLAG}"
   end
 end
