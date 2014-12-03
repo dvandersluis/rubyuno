@@ -60,7 +60,7 @@ You may wish to update your `/etc/profile` or the like with the following to aut
 
 OpenOffice must be running as a service first in order to interact with it (rubyuno uses port 2083 by default):
 
-    soffice -headless -nologo -nofirststartwizard - accept="socket,host=localhost,port=2083;urp;StarOffice.ServiceManager"
+    soffice -headless -nologo -nofirststartwizard -accept="socket,host=localhost,port=2083;urp;StarOffice.ServiceManager"
 
 Once it is running, you can connect to it from ruby:
 
